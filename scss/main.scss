@@ -1,0 +1,134 @@
+@import "_variables.sass";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $darkCyan;
+    background-repeat: no-repeat;
+    font-family: "Kumbh Sans", sans-serif;
+}
+
+main {
+    text-align: center;
+}
+
+// Background
+.background {
+    .bg-top img {
+        position: absolute;
+        @media (max-width: 375px) {
+            right: 35%;
+            bottom: 50%;
+        }
+        @media (min-width: 1440px) {
+            top: -70%;
+            left: -20%;
+        }
+        z-index: -1;
+    }
+    .bg-bottom img {
+        position: absolute;
+        @media (max-width: 375px) {
+            top: 43%;
+            left: 38%;
+        }
+        @media (min-width: 1440px) {
+            top: 53%;
+            left: 47%;
+        }
+        z-index: -1;
+    }
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+// General Font-Sizes
+h1 {
+    font-size: 18px;
+    color: $veryDarkBlue;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: 300;
+    color: $darkBlue;
+}
+
+p {
+    font-size: 14px;
+    color: $darkBlue;
+}
+
+.card {
+    width: 350px;
+    height: 380px;
+    background-color: white;
+    border-radius: 4%;
+    z-index: 10000;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 21px 27px 60px 13px rgba(0, 0, 0, 0.1);
+
+    .header-bg {
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
+    }
+
+    .imgPrincipal {
+        position: relative;
+        top: -55px;
+        img {
+            border: solid 5px white;
+            border-radius: 50%;
+        }
+    }
+
+    .main-body {
+        position: relative;
+        top: -35px;
+        h1 {
+            display: inline-flex;
+            padding-right: 0.3rem;
+            padding-bottom: 0.6rem;
+        }
+        h2 {
+            display: inline-flex;
+        }
+        p {
+            text-align: center;
+        }
+    }
+
+    .footer {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+        border-top: 1px solid rgba(204, 204, 204, 0.5);
+        align-items: center;
+        height: 100%;
+    }
+    .footer-info {
+        text-align: center;
+        h1 {
+            padding-bottom: 0.4rem;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+}
+
+.attribution {
+    margin-top: 5px;
+}

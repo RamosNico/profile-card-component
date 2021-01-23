@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #19a2ae;
+  background-repeat: no-repeat;
+  font-family: "Kumbh Sans", sans-serif; }
+
+main {
+  text-align: center; }
+
+.background .bg-top img {
+  position: absolute;
+  z-index: -1; }
+  @media (max-width: 375px) {
+    .background .bg-top img {
+      right: 35%;
+      bottom: 50%; } }
+  @media (min-width: 1440px) {
+    .background .bg-top img {
+      top: -70%;
+      left: -20%; } }
+
+.background .bg-bottom img {
+  position: absolute;
+  z-index: -1; }
+  @media (max-width: 375px) {
+    .background .bg-bottom img {
+      top: 43%;
+      left: 38%; } }
+  @media (min-width: 1440px) {
+    .background .bg-bottom img {
+      top: 53%;
+      left: 47%; } }
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+h1 {
+  font-size: 18px;
+  color: #2d3248; }
+
+h2 {
+  font-size: 18px;
+  font-weight: 300;
+  color: #6a6f81; }
+
+p {
+  font-size: 14px;
+  color: #6a6f81; }
+
+.card {
+  width: 350px;
+  height: 380px;
+  background-color: white;
+  border-radius: 4%;
+  z-index: 10000;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 21px 27px 60px 13px rgba(0, 0, 0, 0.1); }
+  .card .header-bg {
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px; }
+  .card .imgPrincipal {
+    position: relative;
+    top: -55px; }
+    .card .imgPrincipal img {
+      border: solid 5px white;
+      border-radius: 50%; }
+  .card .main-body {
+    position: relative;
+    top: -35px; }
+    .card .main-body h1 {
+      display: inline-flex;
+      padding-right: 0.3rem;
+      padding-bottom: 0.6rem; }
+    .card .main-body h2 {
+      display: inline-flex; }
+    .card .main-body p {
+      text-align: center; }
+  .card .footer {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    border-top: 1px solid rgba(204, 204, 204, 0.5);
+    align-items: center;
+    height: 100%; }
+  .card .footer-info {
+    text-align: center; }
+    .card .footer-info h1 {
+      padding-bottom: 0.4rem; }
+    .card .footer-info p {
+      font-size: 12px; }
+
+.attribution {
+  margin-top: 5px; }
