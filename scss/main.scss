@@ -81,7 +81,8 @@ p {
     box-shadow: 21px 27px 60px 13px rgba(0, 0, 0, 0.1);
 
     .header-bg {
-        overflow: hidden;
+        border-top-left-radius: 14px;
+        border-top-right-radius: 14px;
     }
 
     .imgPrincipal {
